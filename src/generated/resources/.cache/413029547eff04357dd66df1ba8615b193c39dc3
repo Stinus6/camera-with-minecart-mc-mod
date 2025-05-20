@@ -1,0 +1,10 @@
+// 1.21	2025-05-16T10:43:36.153155	Block States: tutorialmod
+598243bcafa34d25136b0830ec9dafc235d0aac9 assets/tutorialmod/blockstates/midas_touch_block.json
+1f5080bac499935a170a37be4449e3f673dd701a assets/tutorialmod/blockstates/test_block.json
+97c57a5be86a1411dc7bd1214939a0d3eb14a490 assets/tutorialmod/blockstates/warning_block.json
+c2abf77d3ab67693bbc8a4e87ca209801d97f659 assets/tutorialmod/models/block/midas_touch_block.json
+bd6cd075984ebcb34bc433bbbcf91b473cb37733 assets/tutorialmod/models/block/test_block.json
+3a6b03655eb2860139e635e9b324ee73a55ff7ab assets/tutorialmod/models/block/warning_block.json
+844a68618ef53b39b9824204a8d8b78c007d74f5 assets/tutorialmod/models/item/midas_touch_block.json
+8f9ef517c19bd873cdfc5494241acfb82b2164f2 assets/tutorialmod/models/item/test_block.json
+5d8b3d55e0c52a3272a416f8ddac7c3b791719eb assets/tutorialmod/models/item/warning_block.json

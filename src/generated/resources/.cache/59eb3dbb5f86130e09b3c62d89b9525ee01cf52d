@@ -1,0 +1,4 @@
+// 1.21	2025-05-16T10:43:36.150646	Loot Tables
+1b80ab02e906311a85bc9ff1e025e8f50d8dfa7a data/tutorialmod/loot_table/blocks/midas_touch_block.json
+023af7dc3330f444576e4383447dd5154c5f7328 data/tutorialmod/loot_table/blocks/test_block.json
+78cf942f54b2bd46ff2ec7d0c7a0668393ada8c5 data/tutorialmod/loot_table/blocks/warning_block.json

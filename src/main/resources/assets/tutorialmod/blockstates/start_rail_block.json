@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "shape=north_south": { "model": "yourmod:block/my_rail_model" },
+    "shape=east_west":   { "model": "yourmod:block/my_rail_model", "y": 90 }
+  }
+}

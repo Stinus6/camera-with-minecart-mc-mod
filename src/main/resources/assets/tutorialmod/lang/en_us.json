@@ -1,0 +1,21 @@
+{
+  "item.tutorialmod.test_item": "Test Item",
+  "item.tutorialmod.chisel": "Chisel",
+
+  "block.tutorialmod.test_block": "Test Block",
+  "block.tutorialmod.midas_touch_block": "Midas' Touch",
+  "block.tutorialmod.warning_block": "WARNING",
+  "block.tutorialmod.start_rail_block": "Starting Rails",
+
+  "creativetab.tutorialmod.tutorial_tab_items": "Items",
+  "creativetab.tutorialmod.tutorial_tab_blocks": "Blocks",
+
+  "tooltip.tutorialmod.midas_touch_block": "Place down to turn surrounding items to §6Gold§r",
+  "tooltip.tutorialmod.chisel": "Hold §eShift§r to see the tooltip",
+  "tooltip.tutorialmod.chisel.shift_down": "§4Explodes§r with Mind",
+
+  "screen.tutorialmod.title": "TestTitle",
+  "screen.tutorialmod.button": "TestButton",
+  "screen.tutorialmod.button.succeed": "Confirm",
+  "screen.tutorialmod.label": "Vul je naam in"
+}
