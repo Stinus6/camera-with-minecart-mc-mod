@@ -69,14 +69,10 @@ public class ClientEvents
 //            currentYaw = targetYaw;
 //        }
 
-        mc.player.sendSystemMessage(Component.literal(String.valueOf("Current: " + targetYaw)));
-
         if(currentYaw > 0 && checkwrong)
         {
             facingwrong = false;
-            mc.player.sendSystemMessage(Component.literal(String.valueOf("Current Test: " + targetYaw)));
         }
-
 
         if(facingwrong)
         {
