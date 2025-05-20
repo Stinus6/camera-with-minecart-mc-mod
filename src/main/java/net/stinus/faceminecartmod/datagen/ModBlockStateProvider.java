@@ -1,12 +1,11 @@
-package net.stinus.tutorialmod.datagen;
+package net.stinus.faceminecartmod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
-import net.stinus.tutorialmod.TutorialMod;
-import net.stinus.tutorialmod.block.ModBlocks;
+import net.stinus.faceminecartmod.TutorialMod;
 
 public class ModBlockStateProvider extends BlockStateProvider
 {

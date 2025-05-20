@@ -1,4 +1,4 @@
-package net.stinus.tutorialmod;
+package net.stinus.faceminecartmod;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

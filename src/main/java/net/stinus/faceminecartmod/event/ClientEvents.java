@@ -1,6 +1,7 @@
-package net.stinus.tutorialmod.event;
+package net.stinus.faceminecartmod.event;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.Minecart;
 import net.minecraft.world.phys.Vec3;
@@ -9,12 +10,20 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityMountEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.stinus.tutorialmod.TutorialMod;
-import net.stinus.tutorialmod.command.custom.MinecartFacingCommand;
+import net.stinus.faceminecartmod.TutorialMod;
+import net.stinus.faceminecartmod.command.custom.MinecartFacingCommand;
 
 @Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class ClientEvents
 {
+    private static boolean facingwrong = true;
+    private static boolean checkwrong = true;
+
+    public static void Setup()
+    {
+        facingwrong = true;
+        checkwrong = true;
+    }
 
     @SubscribeEvent
     public static void onClientTick(TickEvent.ClientTickEvent event)
@@ -27,21 +36,21 @@ public class ClientEvents
                 (isMinecartMoving(minecart))
             )
         {
-//            mc.player.setYRot();
-
-            mc.player.setYRot(getYaw(minecart));
+            mc.player.setYRot(getYaw(minecart, mc));
             mc.player.setXRot(0);
         }
     }
 
-    private static float getYaw(Minecart minecart)
+    private static float getYaw(Minecart minecart, Minecraft mc)
     {
         Vec3 velocity = minecart.getDeltaMovement();
 
         float targetYaw = (float) Math.toDegrees(Math.atan2(velocity.z, velocity.x));
 
         if(targetYaw < 0)
-            targetYaw += 360.0;
+        {
+            targetYaw += 360;
+        }
 
         float currentYaw = minecart.getYRot();
 
@@ -54,13 +63,29 @@ public class ClientEvents
             deltaYaw += 360;
         }
 
-        if (Math.abs(deltaYaw) > smoothSpeed) {
+//        if (Math.abs(deltaYaw) > smoothSpeed) {
             currentYaw += Math.signum(deltaYaw) * smoothSpeed;
-        } else {
-            currentYaw = targetYaw;
+//        } else {
+//            currentYaw = targetYaw;
+//        }
+
+        mc.player.sendSystemMessage(Component.literal(String.valueOf("Current: " + targetYaw)));
+
+        if(currentYaw > 0 && checkwrong)
+        {
+            facingwrong = false;
+            mc.player.sendSystemMessage(Component.literal(String.valueOf("Current Test: " + targetYaw)));
         }
 
-        return currentYaw - 90;
+
+        if(facingwrong)
+        {
+            checkwrong = false;
+            currentYaw += 180;
+        }
+
+
+        return (currentYaw - 90 + 360) % 360;
     }
 
     public static boolean isMinecartMoving(Minecart minecart) {

@@ -1,12 +1,8 @@
-package net.stinus.tutorialmod.datagen;
+package net.stinus.faceminecartmod.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.stinus.tutorialmod.block.ModBlocks;
-import net.stinus.tutorialmod.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 

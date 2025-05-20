@@ -1,4 +1,4 @@
-package net.stinus.tutorialmod;
+package net.stinus.faceminecartmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -14,9 +14,9 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.stinus.tutorialmod.block.ModBlocks;
-import net.stinus.tutorialmod.item.ModItems;
-import net.stinus.tutorialmod.tabs.ModCreativeModeTabs;
+import net.stinus.faceminecartmod.block.ModBlocks;
+import net.stinus.faceminecartmod.item.ModItems;
+import net.stinus.faceminecartmod.tabs.ModCreativeModeTabs;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -24,7 +24,7 @@ import org.slf4j.Logger;
 public class TutorialMod
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "tutorialmod";
+    public static final String MOD_ID = "faceminecartmod";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 

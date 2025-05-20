@@ -1,11 +1,10 @@
-package net.stinus.tutorialmod.item;
+package net.stinus.faceminecartmod.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
-import net.stinus.tutorialmod.TutorialMod;
+import net.stinus.faceminecartmod.TutorialMod;
 
 public class ModItems
 {

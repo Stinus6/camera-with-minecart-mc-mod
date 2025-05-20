@@ -1,10 +1,9 @@
-package net.stinus.tutorialmod.datagen;
+package net.stinus.faceminecartmod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.stinus.tutorialmod.TutorialMod;
-import net.stinus.tutorialmod.item.ModItems;
+import net.stinus.faceminecartmod.TutorialMod;
 
 public class ModItemModelProvider extends ItemModelProvider
 {

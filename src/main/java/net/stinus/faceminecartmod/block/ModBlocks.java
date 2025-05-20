@@ -1,4 +1,4 @@
-package net.stinus.tutorialmod.block;
+package net.stinus.faceminecartmod.block;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
@@ -6,14 +6,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.stinus.tutorialmod.TutorialMod;
-import net.stinus.tutorialmod.item.ModItems;
+import net.stinus.faceminecartmod.TutorialMod;
+import net.stinus.faceminecartmod.item.ModItems;
 
 import java.util.List;
 import java.util.function.Supplier;

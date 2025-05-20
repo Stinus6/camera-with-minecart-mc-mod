@@ -1,10 +1,9 @@
-package net.stinus.tutorialmod.networking;
+package net.stinus.faceminecartmod.networking;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.network.ChannelBuilder;
-import net.minecraftforge.network.NetworkDirection;
 import net.minecraftforge.network.SimpleChannel;
-import net.stinus.tutorialmod.TutorialMod;
+import net.stinus.faceminecartmod.TutorialMod;
 
 @Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TutorialModPacketHandler {

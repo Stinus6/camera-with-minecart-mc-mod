@@ -1,22 +1,13 @@
-package net.stinus.tutorialmod.datagen;
+package net.stinus.faceminecartmod.datagen;
 
 import net.minecraft.core.HolderLookup;
-import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.data.loot.LootTableProvider;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraftforge.registries.RegistryObject;
-import net.stinus.tutorialmod.block.ModBlocks;
+import net.stinus.faceminecartmod.block.ModBlocks;
 
-import java.util.List;
-import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.CompletableFuture;
 
 public class ModBlockLootTableProvider extends BlockLootSubProvider
 {

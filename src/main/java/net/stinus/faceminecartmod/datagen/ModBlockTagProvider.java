@@ -1,12 +1,11 @@
-package net.stinus.tutorialmod.datagen;
+package net.stinus.faceminecartmod.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.stinus.tutorialmod.TutorialMod;
-import net.stinus.tutorialmod.block.ModBlocks;
+import net.stinus.faceminecartmod.TutorialMod;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;

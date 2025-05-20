@@ -1,15 +1,15 @@
-package net.stinus.tutorialmod.command.custom;
+package net.stinus.faceminecartmod.command.custom;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.BoolArgumentType;
 import com.mojang.brigadier.context.CommandContext;
-import net.minecraft.client.Minecraft;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.Minecart;
+import net.stinus.faceminecartmod.event.ClientEvents;
 
 public class MinecartFacingCommand {
 
@@ -29,6 +29,7 @@ public class MinecartFacingCommand {
             if(player.getVehicle() instanceof Minecart minecart)
             {
                 startFacing = BoolArgumentType.getBool(command, "start");
+                ClientEvents.Setup();
             }
 
             player.sendSystemMessage(Component.literal("Command: faceMinecart"));

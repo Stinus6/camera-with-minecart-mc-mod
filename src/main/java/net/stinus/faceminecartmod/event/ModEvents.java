@@ -1,10 +1,10 @@
-package net.stinus.tutorialmod.event;
+package net.stinus.faceminecartmod.event;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.stinus.tutorialmod.TutorialMod;
-import net.stinus.tutorialmod.networking.TutorialModPacketHandler;
+import net.stinus.faceminecartmod.TutorialMod;
+import net.stinus.faceminecartmod.networking.TutorialModPacketHandler;
 
 @Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModEvents {
