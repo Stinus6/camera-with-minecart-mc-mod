@@ -31,8 +31,6 @@ public class MinecartFacingCommand {
                 startFacing = BoolArgumentType.getBool(command, "start");
                 ClientEvents.Setup();
             }
-
-            player.sendSystemMessage(Component.literal("Command: faceMinecart"));
         }
         return Command.SINGLE_SUCCESS;
     }
